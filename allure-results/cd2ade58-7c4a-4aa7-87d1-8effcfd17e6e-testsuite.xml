@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1608906285665' stop='1608906313888'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1608906285666' status='broken' stop='1608906313885'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-87.0.4280.88'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>read ECONNRESET</message>
+                <stack-trace>RequestError: read ECONNRESET
+                    at ClientRequest.&lt;anonymous> (C:\Users\Shubham Goel\Desktop\LearningProject\node_modules\got\dist\source\core\index.js:953:111)
+                    at ClientRequest.origin.emit (C:\Users\Shubham Goel\Desktop\LearningProject\node_modules\@szmarczak\http-timer\dist\source\index.js:39:20)
+                    at Socket.socketErrorListener (_http_client.js:426:9)
+                    at emitErrorNT (internal/streams/destroy.js:92:8)
+                    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+                    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+                    at Browser.runCommandWithHooks (C:\Users\Shubham Goel\Desktop\LearningProject\node_modules\@wdio\sync\build\wrapCommand.js:65:24)
+                    at Browser.wrapCommandFn (C:\Users\Shubham Goel\Desktop\LearningProject\node_modules\@wdio\sync\build\wrapCommand.js:44:44)
+                    at LoginPage.open (C:\Users\Shubham Goel\Desktop\LearningProject\test\pageobjects\page.js:11:24)
+                    at LoginPage.open (C:\Users\Shubham Goel\Desktop\LearningProject\test\pageobjects\login.page.js:28:22)
+                    at Context.&lt;anonymous> (C:\Users\Shubham Goel\Desktop\LearningProject\test\specs\example.e2e.js:6:19)
+                    at Context.executeSync (C:\Users\Shubham Goel\Desktop\LearningProject\node_modules\@wdio\sync\build\index.js:25:22)
+                    at C:\Users\Shubham Goel\Desktop\LearningProject\node_modules\@wdio\sync\build\index.js:46:68</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
