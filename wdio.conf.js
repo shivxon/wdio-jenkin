@@ -134,7 +134,7 @@ exports.config = {
             disableWebdriverScreenshotsReporting: true,
         }],
         ['junit', {
-            outputDir: './',
+            outputDir: './junit',
             outputFileFormat: function(option) {
                 return `result-${new Date().getTime()}.xml`
             }
